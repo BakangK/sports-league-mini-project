@@ -4,7 +4,7 @@ package bw.sportsleague;
 public class Team {
     private String teamName;
     private Player[] players;
-
+    //Constructor    
     public Team(String teamName, Player[] players) {
         this.teamName = teamName;
         this.players = players;
@@ -12,7 +12,7 @@ public class Team {
 
     // Method to display team and player info
     public void displayTeamInfo() {
-        System.out.println("Team: " + teamName);
+        System.out.printf("Team: " + teamName);
         for (Player p : players) {
             p.displayPlayerInfo();
         }
