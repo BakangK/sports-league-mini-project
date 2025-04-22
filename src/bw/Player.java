@@ -5,6 +5,7 @@ public abstract class Player{
     private String name;
     private int wins;
     private int age;
+    
     //Constructor
     public Player(String name , int wins , int age)throws InvalidPlayerException {
         if (wins < 0) {
