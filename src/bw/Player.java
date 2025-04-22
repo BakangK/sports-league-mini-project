@@ -6,7 +6,13 @@ public abstract class Player{
     private int wins;
     private int age;
     //Constructor
-    public Player(String name , int wins , int age){
+    public Player(String name , int wins , int age)throws InvalidPlayerException {
+        if (wins < 0) {
+            throw new InvalidPlayerException("Wins cannot be negative: " + wins);
+        }
+        if (age < 0) {
+            throw new InvalidPlayerException("Age cannot be negative: " + age);
+        }
         this.name = name;
         this.wins = wins;
         this.age = age;
