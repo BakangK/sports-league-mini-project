@@ -4,15 +4,17 @@ package bw.sportsleague;
 public class Team {
     private String teamName;
     private Player[] players;
+    private String kitColour;
     //Constructor    
-    public Team(String teamName, Player[] players) {
+    public Team(String teamName, Player[] players, String kitColour) {
         this.teamName = teamName;
         this.players = players;
+        this.kitColour = kitColour;
     }
 
     // Method to display team and player info
     public void displayTeamInfo() {
-        System.out.printf("Team: " + teamName);
+        System.out.printf("Team: " + teamName + "kitColour: " + kitColour);
         for (Player p : players) {
             p.displayPlayerInfo();
         }
@@ -33,5 +35,11 @@ public class Team {
 
     public void setPlayers(Player[] players) {
         this.players = players;
+    }
+    public String getKitColour(){
+        return kitColour;
+    }
+    public void setKitColour( String kitColour) {
+        this.kitColour =kitColour;
     }
 }
