@@ -10,6 +10,7 @@ public abstract class Player{
         this.name = name;
         this.wins = wins;
         this.age = age;
+        
     }
 
     //Getter and Setter methods
