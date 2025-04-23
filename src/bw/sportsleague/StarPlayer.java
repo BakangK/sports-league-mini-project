@@ -7,6 +7,6 @@ public class StarPlayer extends Player {
 
     @Override
     public void displayPlayerInfo() {
-        System.out.println("Star Player: " + getName() + " - Wins: " + getWins() + " - Age: " + getAge());
+        System.out.println("Star Player: " + getName() + "   'Wins: " + getWins() + "   Age: " + getAge());
     }
 }

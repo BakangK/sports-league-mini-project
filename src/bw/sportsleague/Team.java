@@ -14,7 +14,9 @@ public class Team {
 
     // Method to display team and player info
     public void displayTeamInfo() {
+        
         System.out.printf("Team: " + teamName + "kitColour: " + kitColour);
+        System.out.println();
         for (Player p : players) {
             p.displayPlayerInfo();
         }
@@ -42,13 +44,5 @@ public class Team {
     public void setKitColour( String kitColour) {
         this.kitColour =kitColour;
     }
-       //  Linear search by teamName
-     public static int linearSearch(Team[] arr, String targetName) { 
-        for (int i = 0; i < arr.length; i++) { 
-            if (arr[i].getTeamName().equals(targetName)) { 
-                return i; 
-            } 
-        } 
-        return -1; 
-    } 
+       
 }

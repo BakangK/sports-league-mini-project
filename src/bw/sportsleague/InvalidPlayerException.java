@@ -1,4 +1,4 @@
-//InvalidPlayerException
+//Custom Exception
 package bw.sportsleague;
 
 
