@@ -45,6 +45,7 @@ public abstract class Player{
         this.age = age;
         
     }
+    //doing a selection sort using wins
      public static void selectionSort(Player[] arr) { 
         for (int i = 0; i < arr.length - 1; i++) { 
             int minIndex = i; 
@@ -60,6 +61,7 @@ public abstract class Player{
             arr[minIndex] = temp; 
         } 
     }  
+    //doing insertion sort using age 
     public static void insertionSort(Player [] arr) { 
             for (int i = 1; i < arr.length; i++) { 
                 Player key = arr[i]; 
