@@ -45,6 +45,9 @@ public abstract class Player{
         this.age = age;
         
     }
+
+    public abstract void displayPlayerInfo();
+    
     //doing a selection sort using wins
      public static void selectionSort(Player[] arr) { 
         for (int i = 0; i < arr.length - 1; i++) { 
@@ -93,7 +96,7 @@ public abstract class Player{
         return -1;
     }
     }  
-}
+
 
 
 
