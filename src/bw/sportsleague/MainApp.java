@@ -1,4 +1,7 @@
-//MainApp.java
+/*
+ * How to compile : javac -d . src/bw/sportsleague/*.java
+ * How to run : java bw.sportsleague.MainApp
+*/
 package bw.sportsleague;
 
 public class MainApp {
