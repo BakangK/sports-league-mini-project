@@ -1,3 +1,4 @@
+//StarPlayer.java
 package bw.sportsleague;
 
 public class StarPlayer extends Player {
