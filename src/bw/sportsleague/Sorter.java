@@ -26,7 +26,7 @@ public class Sorter{
                     minIndex = j; 
                 } 
             } 
-            
+          //swap  
         Player temp = arr[i]; 
             arr[i] = arr[minIndex]; 
             arr[minIndex] = temp; 
